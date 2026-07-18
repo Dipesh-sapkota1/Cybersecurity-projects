@@ -294,16 +294,16 @@ From the [PSH, SYN] flags seen in Figure 6.1, it is confirmed that a large volum
 
 I followed the URL hxxps[://]locstorageinfo[.]z13[.]web[.]core[.]windows[.]net/ioocceneen[.]appxbundle, and based on the network traffic, it is confirmed that the application was downloaded. I performed basic static and dynamic malware analysis on the downloaded [ioocceneen.appxbundle] to identify the activity of the files.
 
-<img src="/screenshots/appxbundle.png" alt="appxbundle">
+<img src="./screenshots/appxbundle.png" alt="appxbundle">
 Figure 7.1: File reputation — ioocceneen.appxbundle
 
-<img src="/screenshots/appxbundle2.png" alt="appxbundle">
+<img src="./screenshots/appxbundle2.png" alt="appxbundle">
 Figure 7.2: File reputation — ioocceneen.appxbundle
 
-<img src="/screenshots/ms_appinstaller.png" alt="appinstaller execution">
+<img src="./screenshots/ms_appinstaller.png" alt="appinstaller execution">
 Figure 7.3: App Installer execution
 
-<img src="/screenshots/appxbundle_exe.png" alt="appxbundle execution">
+<img src="./screenshots/appxbundle_exe.png" alt="appxbundle execution">
 Figure 7.4: ioocceneen.appxbundle execution
 
 | Title | Value | Relevance |
@@ -315,7 +315,7 @@ Figure 7.4: ioocceneen.appxbundle execution
 | File location | hxxps[://]locstorageinfo[.]z13[.]web[.]core[.]windows[.]net/ioocceneen[.]appxbundle | File source |
 | Reputation check (VirusTotal) | 35/63 | Flagged as malicious by security vendors |
 
-<img src="/screenshots/wpsprotocol.png" alt="wps.exe">
+<img src="./screenshots/wpsprotocol.png" alt="wps.exe">
 Figure 7.5: wpsprotocol.exe
 
 | Title | Value | Relevance |
@@ -327,7 +327,7 @@ Figure 7.5: wpsprotocol.exe
 | File in ioocceneen.appxbundle | ioocceneen.appxbundle/Adobe_1.2.0.0_x86/CustomParts/wsprotocol.exe | Source of exe |
 | Reputation check (VirusTotal) | 46/72 | Flagged as malicious by security vendors |
 
-<img src="/screenshots/emotet.png" alt="emotet">
+<img src="./screenshots/emotet.png" alt="emotet">
 Figure 7.6: Emotet DLL
 
 | Title | Value | Relevance |
@@ -347,7 +347,7 @@ Upon execution of ioocceneen.appxbundle, the self-signed Adobe certificate cause
 
 [Describe how the timeline was assembled from available evidence.]
 
-<img src="/screenshots/infection_chain.png" alt="infection chain" width="1000">
+<img src="./screenshots/infection_chain.png" alt="infection chain" width="1000">
 Figure 8.1: Infection chain
 
 **Attack Timeline**
@@ -384,7 +384,7 @@ From the infection chain, it is confirmed that the local host machine was infect
 
 Initial access was via a phishing email. Evidence collected from email header analysis suggested the email is phishing. A link found in the email was confirmed to be malicious.
 
-![Evidence screenshot](/screenshots/email_header.png)
+![Evidence screenshot](./screenshots/email_header.png)
 *Figure: Email validation failed*
 
 ---
@@ -425,12 +425,12 @@ ip.addr == 163.172.50.82
 | Data volumes | 1514, 54, 1430 | Wireshark | High |
 | File Hash Emotet (MD5) | 9e762105e31c89138b29276916930ffb | VirusTotal | High |
 
-![Evidence screenshot](/screenshots/c2-traffic1.png)
-![Evidence screenshot](/screenshots/c2-infra3.png)
+![Evidence screenshot](./screenshots/c2-traffic1.png)
+![Evidence screenshot](./screenshots/c2-infra3.png)
 Figure: C2 traffic and its infrastructure [46.55.222.11]
 
-![Evidence screenshot](/screenshots/c2_traffic2.png)
-![Evidence screenshot](/screenshots/c2_infra2.png)
+![Evidence screenshot](./screenshots/c2_traffic2.png)
+![Evidence screenshot](./screenshots/c2_infra2.png)
 Figure: C2 traffic and its infrastructure [163.172.50.82]
 
 ---
